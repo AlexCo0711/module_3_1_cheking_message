@@ -14,13 +14,13 @@ def send_email(message, recipient, *, sender='university.help@gmail.com'):
             adr = False  # email не по правилам
             break
     if adr == False:  # условие неправильного email
-        print('Невозможно отправить письмо с адреса', sender, 'на адрес', recipient, f'.')
+        print(f'Невозможно отправить письмо с адреса {sender} на адрес {recipient}.')
     elif 'university.help@gmail.com' == sender != recipient:  # условие правильного email
-        print('Письмо успешно отправлено с адреса', sender, 'на адрес', recipient, f'.')
+        print(f'Письмо успешно отправлено с адреса {sender} на адрес {recipient}.')
     elif sender == recipient:  # условие равенства email jnghfdbntkz b gjkexfntkz
         print('Нельзя отправить письмо самому себе!')
     else:  # в случае когда email отправителя не соответствует шаблону
-        print('НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса', sender, 'на адрес', recipient, f'.')
+        print(f'НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса {sender} на адрес {recipient}.')
     return
 
 
